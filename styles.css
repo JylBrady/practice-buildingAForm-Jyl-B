@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c8d2e3;
+}
+
+
+header {
+    font-family: 'Sofia';
+    background: #00102a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+}
+
+
+.form-container {
+    background: #e3ddba;
+    color:#00102a;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+
+
+input, select, textarea {
+    width: 80%;
+    padding: 5px;
+    margin-top: 6px;
+    border: 2px solid #00102a;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-color:#00102a;
+    border-radius: 12px;
+
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color:#00102a;
+
+}
+
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+button {
+    background: #00102a;
+    color: white;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 12px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+
+
+button:hover {
+    background: #c8d2e3;
+    color:  #00102a;
+    transform: scale(1.05);
+}

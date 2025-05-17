@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML and CSS Practice 5 - Practice Building a Form</title>
+        <link rel="stylesheet" href="styles.css">   
+        <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>      <!-- Google Fonts -->
+    </head>
+
+
+    <body>
+
+        <header>
+            <h2>What do you say?</h2>
+        </header>
+            <!-- CONTAINER  -->
+            
+        <main class="form-container">
+                
+            <form action="/submit" method="post">
+            
+                <!--  Full Name (Text Input)  -->
+                <label fullname>Full Name:</label>
+                <input class="input" type="text" id="fullname" name="fullname" placeholder="Please enter your full name" required>
+
+                <!--  Email Address (Email Input)   -->
+                <label for="password">Password:</label>
+                <input class="input" type="password" id="password" name="password" required>
+
+                <!--  Password (Password Input for account verification)  -->
+                <label for="password">Password:</label>
+                <input class="input" type="password" id="password" name="password" required>
+
+                <!--  Feedback Category (Dropdown/Select Input)   -->
+                <br>
+                <label for="feedbacktype">Feedback Category:</label>
+                <br>
+                
+                <select class="select" id="feedbacktype" name="feedbacktype">
+                    <option value="compliment">Compliment</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="question">Question</option>
+                    <option value="other">Other</option>     
+                </select>
+
+                <!--  Preferred Contact Method (Radio Buttons)   -->
+                <fieldset class="radio-group">
+
+                    <br>
+                    <legend>Preferred Contact Method:</legend>
+                    <label for="email">
+                        <input type="radio" id="email" name="contact" value="email">
+                    Email
+                    </label>
+                    
+                    <label for="phone">
+                        <input type="radio" id="phone" name="contact" value="phone">
+                    Phone
+                    </label>
+
+                </fieldset>
+
+                <!--  Additional Features of Interest (Checkboxes)  -->
+                <fieldset class="checkbox-group">
+                    <legend>Topics that interest you:</legend>
+                    
+                    <label for="coding">
+                        <input type="checkbox" id="coding" name="interests" value="coding"> 
+                    Coding
+                    </label>
+
+                    <label for="art">
+                        <input type="checkbox" id="art" name="interests" value="art"> 
+                    Art
+                    </label>
+
+                    <label for="music">
+                        <input type="checkbox" id="music" name="interests" value="music"> 
+                    Music
+                    </label>
+
+                    <label for="food">
+                        <input type="checkbox" id="coding" name="food" value="food"> 
+                    Food
+                    </label>
+
+                </fieldset>
+
+                <!--  Comments (Textarea) -->
+                <br>
+                <label for="comments">What is on your mind?</label>
+                <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Let me know what you're thinking . . . "></textarea>
+            
+                <!--  Submit Button (to send the data)  -->
+                <!-- <input class="button" type="submit" value="Submit"> -->
+                <button type="submit">Submit</button>
+                
+            </form> 
+    
+        </main>
+
+    </body>
+
+</html>
+
+
+ <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --><!-- 
+   ○ Full Name (Text Input)                                     
+        ○ Email Address (Email Input)                           
+        ○ Password (Password Input for account verification)    
+        ○ Feedback Category (Dropdown/Select Input) 
+        ○ Preferred Contact Method (Radio Buttons) 
+        ○ Additional Features of Interest (Checkboxes) 
+        ○ Comments (Textarea) 
+        ○ Submit Button (to send the data)                     
+
+    Requirements: 
+        ○ Use appropriate <label> elements for each input to improve accessibility. 
+        ○ Group related inputs using <fieldset> and <legend>. 
+        ○ Add placeholder text to guide users where applicable. 
+        ○ Ensure required fields are marked using the required attribute.  
+
+ --><!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --> <!--    --
